@@ -14,4 +14,6 @@ jobs:
         run: scarb fmt --check && ls -la
         working-directory: ./crates/addition
       - name: hmm
-        run: ls -la 
+        run: ls -la
+        with:
+          post: echo "Post hmm" 
