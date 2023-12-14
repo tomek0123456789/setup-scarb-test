@@ -15,5 +15,3 @@ jobs:
         working-directory: ./crates/addition
       - name: hmm
         run: ls -la
-        with:
-          post: echo "Post hmm" 
