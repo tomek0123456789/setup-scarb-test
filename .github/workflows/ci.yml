@@ -11,7 +11,7 @@ jobs:
         with:
           scarb-version: "2.3.1"
       - name: cwd
-        run: scarb fmt --check
+        run: scarb fmt --check && ls -la
         working-directory: ./crates/addition
       - name: hmm
         run: ls -la 
