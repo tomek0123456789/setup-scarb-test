@@ -7,7 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: software-mansion/setup-scarb@638e3f22e954d6bdb105e797827c9f41fb597165
+      - name: check glob
+        uses: software-mansion/setup-scarb@638e3f22e954d6bdb105e797827c9f41fb597165
+        working-directory: ./crates/addition
         with:
           scarb-version: "2.3.1"
 #      - run: scarb fmt --check
