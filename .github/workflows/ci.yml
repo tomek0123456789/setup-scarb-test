@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: software-mansion/setup-scarb@04293aaac73b65d6135bfce8752b031832b6b50e
+      - uses: software-mansion/setup-scarb@2ddf0b2d53b4784f4c4a1107a6ba49c24d013f13
         with:
           scarb-version: "2.3.1"
       - run: scarb fmt --check
