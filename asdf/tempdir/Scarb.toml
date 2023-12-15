@@ -1,8 +1,0 @@
-[package]
-name = "test"
-version = "0.1.0"
-
-[dependencies]
-#alexandria_math = { git = "https://github.com/keep-starknet-strange/alexandria", rev = "27fbf5b" }
-
-[dev-dependencies]

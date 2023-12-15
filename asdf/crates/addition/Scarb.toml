@@ -1,8 +1,0 @@
-[package]
-name = "addition"
-version.workspace = true
-
-[lib]
-
-[dependencies]
-alexandria_math = { git = "https://github.com/keep-starknet-strange/alexandria", rev = "27fbf5b" }
