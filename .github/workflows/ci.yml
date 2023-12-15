@@ -7,6 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        path: ./asdf/test/xd
       - uses: software-mansion/setup-scarb@test-cwd
         with:
           scarb-version: "2.3.1"
