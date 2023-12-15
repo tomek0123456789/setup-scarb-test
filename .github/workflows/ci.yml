@@ -10,9 +10,9 @@ jobs:
       - uses: software-mansion/setup-scarb@638e3f22e954d6bdb105e797827c9f41fb597165
         with:
           scarb-version: "2.3.1"
-      - run: scarb fmt --check
-#      - name: cwd
-#        run: scarb fmt --check && ls -la
-#        working-directory: ./crates/addition
+#      - run: scarb fmt --check
+      - name: cwd
+        run: scarb fmt --check && ls -la
+        working-directory: ./crates/addition
 #      - name: hmm
 #        run: ls -la
