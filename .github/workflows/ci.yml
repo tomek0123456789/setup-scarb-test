@@ -6,13 +6,15 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - name: cwd
-        run: scarb fmt --check && ls -la
-        working-directory: ./crates/addition
-#      - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
       - uses: software-mansion/setup-scarb@test-cwd
         with:
           scarb-version: "2.3.1"
+      - name: cwd
+        run: scarb fmt --check && ls -la
+        working-directory: ./crates/addition
+      - name: echo_gh_workspace
+        run: echo ${GITHUB_WORKSPACE} && echo $GITHUB_WORKSPACE
 #      - run: scarb fmt --check
 #      - name: hmm
 #        run: ls -la
