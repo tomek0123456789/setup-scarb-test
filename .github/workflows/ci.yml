@@ -10,6 +10,7 @@ jobs:
       - uses: software-mansion/setup-scarb@test-cwd
         with:
           scarb-version: "2.3.1"
+        working-directory: ../
       - name: cwd
         run: scarb fmt --check && ls -la
         working-directory: ./crates/addition
