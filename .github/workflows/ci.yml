@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: software-mansion/setup-scarb@6c9f033b0c72a688aa8052de8ee794d6b71540a6
+      - uses: software-mansion/setup-scarb@fce8e88c42cf82ed3968958417060a23386aad3d
         with:
           scarb-version: "2.3.1"
       - name: cwd
