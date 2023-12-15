@@ -7,11 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: software-mansion/setup-scarb@fce8e88c42cf82ed3968958417060a23386aad3d
+      - uses: software-mansion/setup-scarb@28d0644e301a02fe1a09d99416e8f8b6afb33df2
         with:
           scarb-version: "2.3.1"
-      - name: cwd
-        run: scarb fmt --check && ls -la
-        working-directory: ./crates/addition
-      - name: hmm
-        run: ls -la
+      - run: scarb fmt --check
+#      - name: cwd
+#        run: scarb fmt --check && ls -la
+#        working-directory: ./crates/addition
+#      - name: hmm
+#        run: ls -la
