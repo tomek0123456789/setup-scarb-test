@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: software-mansion/setup-scarb@test-cwd
+      - uses: software-mansion/setup-scarb@tomek/9-scarb-lock-cache
         with:
           scarb-version: "2.3.1"
       - name: echo_gh_workspace
