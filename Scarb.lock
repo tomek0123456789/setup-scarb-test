@@ -33,5 +33,6 @@ name = "workspaces"
 version = "0.1.0"
 dependencies = [
  "addition",
+ "alexandria_math",
  "fibonacci",
 ]

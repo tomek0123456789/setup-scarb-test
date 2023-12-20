@@ -29,5 +29,6 @@ snforge.workspace = true
 starknet.workspace = true
 fibonacci = { path = "crates/fibonacci" }
 addition = { path = "crates/addition" }
+alexandria_math = { git = "https://github.com/keep-starknet-strange/alexandria", rev = "27fbf5b" }
 
 [[target.starknet-contract]]
